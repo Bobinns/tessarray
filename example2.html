@@ -1,0 +1,54 @@
+<html>
+<style>
+    /* Use this if images are appearing before rendering correctly */
+    /* .container {
+      opacity: 0;
+    } */
+
+    /* .box {
+      background-color: gray;
+      transition: transform 500ms ease-in 0ms, height 500ms ease-in 0ms, width 500ms ease-in 0ms;
+    } */
+
+    /* 100% height and width are necessary for images to render correctly*/
+    img {
+     width: 100%;
+     height: 100%;
+    }
+
+</style>
+
+<body>
+  <div style="margin : auto; text-align: center">
+    <h1>Tessarray<h1>
+  </div>
+  <!-- <button class="selector" data-filter="" data-sort="">all</button>
+  <button class="selector" data-filter="" data-sort="data-reverse">reverse-all</button>
+  <button class="selector" data-filter="nature">nature</button>
+  <button class="selector" data-filter="buildings">buildings</button>
+  <button class="selector" data-filter="people">people</button>
+  <span style="float: right">Try resizing the window!</span> -->
+      
+  <!-- Provide aspect ratio or height and width through data attributes for a smoother load. -->
+  <!-- If you don't know the dimensions, you don't have to provide any -->
+  <div id="container">
+    <div class="box">
+      <img src="https://source.unsplash.com/random/buildings"/>
+    </div>
+    <div class="box">
+      <img src="https://source.unsplash.com/random/food"/>
+    </div>
+    <div class="box">
+      <img src="https://source.unsplash.com/random/people"/>
+    </div>
+    <div class="box">
+      <img src="https://source.unsplash.com/random/nature"/>
+    </div>
+  </div>
+</body>
+
+<script src='./dist/webpack-dts2.js'></script>  
+<script>
+   var tessarray = new Tessarray("#container", ".box");
+</script>
+</html>
