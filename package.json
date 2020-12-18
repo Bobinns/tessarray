@@ -4,7 +4,8 @@
   "description": "Easy application of Flickr's Justified Layout with optional sorting and filtering.",
   "main": "tessarray.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server -a localhost -p 8000"
   },
   "repository": "git+https://github.com/dixonandmoe/tessarray.git",
   "keywords": [
@@ -20,6 +21,11 @@
   },
   "homepage": "https://github.com/dixonandmoe/tessarray#readme",
   "dependencies": {
-    "justified-layout": "2.1.1"
+    "http-server": "^0.12.3",
+    "justified-layout": "2.1.1",
+    "webpack": "^5.10.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.2.0"
   }
 }
